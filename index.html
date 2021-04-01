@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>CSS text col bug POC</title>
+	</head>
+	<body>
+		<style>
+			body {
+				max-width: 1280px;
+				margin: 0 auto;
+			}
+			.text-columns {
+				padding: 5rem 1rem;
+				columns: 3;
+			}
+			.text-columns p:first-child::first-line {
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+		</style>
+
+		<section class="text-columns">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna dui, pretium vel nunc ut, euismod pharetra ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque vel accumsan augue. Curabitur in faucibus erat. Nullam semper rutrum magna, et aliquam leo eleifend in. Aliquam erat volutpat. Phasellus pharetra et risus non vehicula. Donec congue, nisl quis lacinia mollis, turpis diam maximus urna, non efficitur metus velit et mi. Phasellus at urna tellus. Morbi eu dolor congue, mattis libero egestas, vestibulum ante. Fusce porta mattis gravida. Phasellus pharetra, mi vitae ultricies elementum, neque ipsum scelerisque dui, sit amet egestas augue dolor eu nulla.</p>
+
+			<p>Nam tristique nulla nec leo porta pulvinar ut eu diam. Nulla blandit diam at ante eleifend finibus. Morbi sit amet ipsum non lectus rhoncus ultrices sit amet vel ex. Aliquam tempor lobortis massa. Fusce tempus tristique tellus eu dignissim. Quisque aliquam diam id purus volutpat consequat. Aliquam ac tristique leo. Sed id enim eget ante pretium cursus. Aenean risus erat, fringilla et nisl dictum, volutpat fermentum velit. In euismod bibendum sem, ut commodo mi tempus nec.</p>
+
+			<p>Curabitur at neque vel metus scelerisque euismod a vel neque. Mauris porttitor sodales purus, ut molestie enim mollis id. Donec dictum est in massa facilisis, at pulvinar ante volutpat. Nulla consequat vulputate magna vitae varius. Integer et est lectus. Aenean eu dui leo. Integer lobortis lobortis massa sit amet tincidunt. Maecenas tincidunt elit vel libero placerat vulputate. Integer vitae nibh sapien.</p>
+
+			<p>Suspendisse congue eu dolor sed lacinia. Nullam congue nunc risus, sit amet venenatis lacus rutrum vel. Vestibulum malesuada felis diam, vitae porttitor enim pharetra nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras pellentesque rhoncus augue, sit amet rutrum diam finibus ut. Morbi elementum venenatis augue non egestas. Sed eu nunc rhoncus, sodales arcu eget, malesuada diam. Cras a orci eget felis congue consequat ac at est. Pellentesque posuere bibendum ex. Integer non ornare dolor. Proin urna nisl, mattis eget magna vitae, sodales molestie elit.</p>
+
+			<p>Nullam eu fermentum libero. Suspendisse pellentesque vulputate augue et laoreet. Nulla et neque consequat, tempus leo nec, interdum justo. Quisque at eleifend tellus. Morbi vitae arcu lectus. Aliquam pulvinar commodo ipsum, non condimentum justo ultrices quis. Nunc et metus mi. Mauris non semper risus. Donec at scelerisque lorem. Sed posuere a quam maximus commodo. Proin at eleifend diam, et blandit augue.</p>
+
+			<p>Ut vestibulum et nunc ac tristique. Quisque elementum velit vel felis rutrum aliquet. Morbi nec fermentum justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sit amet dui eleifend, maximus neque sit amet, feugiat lectus. Sed risus arcu, tincidunt et mi eget, condimentum congue orci. Donec ultricies ante non tellus eleifend dapibus sed id diam. Praesent ante libero, maximus sit amet ullamcorper ac, vehicula non ipsum. Pellentesque felis est, hendrerit nec consequat ac, rhoncus vel ante.</p>
+
+			<p>Cras sed nisi eget erat sollicitudin facilisis. Cras laoreet gravida metus, at hendrerit nisl tristique sed. Maecenas iaculis et odio eget iaculis. Maecenas at quam vel leo rhoncus euismod vel eget leo. Sed pulvinar lectus a velit porta, id gravida nisl ultrices. Nunc tempus lorem in leo dapibus, quis congue tellus placerat. Suspendisse quis est ullamcorper, interdum ipsum sit amet, suscipit leo. Sed laoreet et diam id tincidunt. Nunc convallis massa lorem, porta dictum tortor facilisis vitae.</p>
+
+			<p>Ut et elit eget mi tincidunt lobortis et in diam. Aliquam suscipit lorem sit amet sagittis placerat. Nunc dapibus bibendum tristique. Sed efficitur urna tellus, ut blandit metus dignissim sed. Nam quam dui, suscipit id faucibus nec, imperdiet sit amet sapien. In hac habitasse platea dictumst. Curabitur elit elit, sodales at fermentum at, euismod vel nisi. Proin bibendum, metus non fermentum viverra, leo urna ultrices felis, imperdiet consectetur turpis ex non tortor. Nam rhoncus tortor in varius porttitor. Aliquam congue nisl auctor, sodales mi in, eleifend arcu. Morbi ullamcorper turpis nec orci ornare auctor. Fusce porta, justo vitae eleifend ullamcorper, ex velit tempor sem, non ullamcorper orci enim quis nisl. Phasellus eu orci a urna venenatis convallis. Aliquam lectus quam, posuere eget laoreet ac, vestibulum sed felis.</p>
+
+			<p>Maecenas ac justo lobortis, tempor felis non, consectetur nibh. Suspendisse non nunc mollis, cursus augue id, auctor nunc. Mauris in urna imperdiet, euismod felis eu, blandit justo. Nulla eget lacinia tortor. Sed accumsan auctor lobortis. Vestibulum efficitur urna efficitur pretium dignissim. Nullam sit amet felis a nibh pretium luctus sed eu magna. Pellentesque semper non eros a aliquam.</p>
+
+			<p>Vivamus aliquet enim enim. Nulla vehicula neque eu neque condimentum, tincidunt convallis lectus gravida. Aliquam ac massa aliquet, auctor massa pretium, euismod nisl. Phasellus a ipsum in nunc placerat elementum. Donec odio ante, venenatis ut massa congue, ultrices fermentum lorem. Vivamus non imperdiet eros. Cras sed pellentesque odio. Cras et pulvinar ex, at vehicula eros. Etiam volutpat mauris neque, a tempor sem dapibus a. In est ex, malesuada ut diam a, interdum venenatis eros. Suspendisse potenti.</p>
+		</section>
+
+	</body>
+</html>
